@@ -41,8 +41,3 @@ Risk Register
 Implementation Pathway
 Final Recommendation
 Assumptions and Confidence
-Repository structure
-SKILL.md
-README.md
-Purpose
-This repository packages a reusable OpenClaw skill for structured, decision-oriented policy and strategic analysis.
