@@ -1,50 +1,51 @@
-# Global Think-Tank Analyst
+# Global Think-Tank Analyst Skill for ClawHub
 
-`global-think-tank-analyst` is an **OpenClaw skill** for producing structured, decision-ready policy analysis in the style of leading global think tanks.
+An OpenClaw skill for producing high-quality, decision-ready policy analysis with the structure, clarity, and trade-off framing expected from top global think tanks.
 
-It is built for users who need more than a generic summary: clear policy options, trade-offs, risks, scenarios, and implementation logic.
+## What this skill does
 
-## What This Skill Produces
+- Creates policy briefs with a clear decision focus
+- Produces scenario analysis with explicit assumptions
+- Maps stakeholders, incentives, and institutional constraints
+- Compares policy options with trade-offs
+- Builds implementation pathways and risk registers
+- Delivers final recommendations with confidence and caveats
 
-- policy briefs
-- strategy memos
-- scenario analysis
-- stakeholder mapping
-- political-economy assessment
-- policy options with trade-offs
-- implementation pathways
-- risk registers
-- decision-oriented recommendations
+## Best for
 
-## Intended Users
+- Think tanks
+- Policy teams
+- NGOs and donors
+- Public sector advisory work
+- Strategic research and geopolitical analysis
+- Institution-facing AI workflows
 
-This skill is useful for:
+## Install
 
-- think tanks
-- NGOs
-- public policy teams
-- donors and development partners
-- research and strategy analysts
-- government and institutional advisory work
+```bash
+clawhub install global-think-tank-analyst
+Optional pinned version:
 
-## Design Principles
+clawhub install global-think-tank-analyst --version 1.0.0
+Use in OpenClaw
+Use $global-think-tank-analyst to evaluate policy options for [topic], including stakeholder analysis, scenarios, implementation risks, and a final recommendation.
+Typical output
+Executive Summary
+Policy Objective
+Current Context
+Stakeholder Map
+Policy Options
+Trade-offs
+Scenario Analysis
+Risk Register
+Implementation Pathway
+Final Recommendation
+Assumptions and Confidence
+Repository structure
+SKILL.md
+README.md
+Purpose
+This repository packages a reusable OpenClaw skill for structured, decision-oriented policy and strategic analysis.
 
-The skill is designed to emphasize:
-
-- structured reasoning
-- explicit assumptions
-- evidence-aware analysis
-- practical recommendations
-- decision relevance over abstract discussion
-
-## Repository Contents
-
-- `SKILL.md` - core skill definition and workflow instructions
-
-## Example Prompt
-
-`Assess policy options for regulating frontier AI models in Central Asia.`
-
-## Purpose
-
-This repository provides a reusable **OpenClaw skill package** for policy and strategic analysis workflows.
+License
+Add a license file if you plan to distribute the skill publicly.
