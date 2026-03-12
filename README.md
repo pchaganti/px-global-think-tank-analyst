@@ -1,51 +1,84 @@
-# Global Think-Tank Analyst Skill for ClawHub
+# Global Think-Tank Analyst (OpenClaw Skill)
 
-An OpenClaw skill for producing high-quality, decision-ready policy analysis with the structure, clarity, and trade-off framing expected from top global think tanks.
+A decision-grade policy analysis skill for OpenClaw that helps produce structured briefs in the style of leading global think tanks.
 
-## What this skill does
+It is designed for teams that need **clear options, explicit trade-offs, implementation realism, and risk-aware recommendations**.
 
-- Creates policy briefs with a clear decision focus
-- Produces scenario analysis with explicit assumptions
-- Maps stakeholders, incentives, and institutional constraints
-- Compares policy options with trade-offs
-- Builds implementation pathways and risk registers
-- Delivers final recommendations with confidence and caveats
+---
 
-## Best for
+## What this skill delivers
 
-- Think tanks
-- Policy teams
-- NGOs and donors
-- Public sector advisory work
-- Strategic research and geopolitical analysis
-- Institution-facing AI workflows
+- Decision-focused policy briefs (not generic summaries)
+- Scenario analysis (best/base/worst) with trigger indicators
+- Stakeholder and political-economy mapping
+- Policy option comparison with feasibility and time-to-impact
+- Risk register with mitigation owners
+- Implementation pathways (30/60/90 + 4–12 month view)
+- Explicit assumptions, confidence, and evidence quality
 
-## Install
+---
+
+## Best use cases
+
+- Government and ministerial advisory memos
+- Think tank and policy unit analysis
+- NGO/donor strategy notes
+- Geopolitical and public-policy scenario planning
+- Institution-facing AI workflows requiring auditability
+
+---
+
+## Installation
 
 ```bash
 clawhub install global-think-tank-analyst
+```
 
-Optional pinned version:
+Install a pinned version:
 
+```bash
 clawhub install global-think-tank-analyst --version 1.0.0
+```
 
-Use in OpenClaw
-Use $global-think-tank-analyst to evaluate policy options for [topic], including stakeholder analysis, scenarios,
+---
 
-Typical output
-Executive Summary
-Policy Objective
-Current Context
-Stakeholder Map
-Policy Options
-Trade-offs
-Scenario Analysis
-Risk Register
-Implementation Pathway
-Final Recommendation
-Assumptions and Confidence
+## Example usage in OpenClaw
 
-Purpose
-This repository packages a reusable OpenClaw skill for structured, decision-oriented policy and strategic analysis.
+```text
+Use $global-think-tank-analyst to evaluate policy options for [topic], including stakeholder analysis, scenarios, risks, and implementation pathways.
+```
 
-License MIT
+---
+
+## Typical output structure
+
+1. Executive Summary  
+2. Policy Objective  
+3. Current Context  
+4. Stakeholder Map  
+5. Policy Options and Trade-offs  
+6. Scenario Analysis  
+7. Risk Register  
+8. Implementation Pathway  
+9. Monitoring Framework  
+10. Final Recommendation  
+11. Assumptions, Evidence Quality, Confidence
+
+---
+
+## Design principles
+
+- **Decision usefulness over verbosity**
+- **Transparent assumptions and uncertainty**
+- **Operational realism (budget/legal/political constraints)**
+- **Actionable recommendations with clear next steps**
+
+---
+
+## Repository purpose
+
+This repository packages a reusable OpenClaw skill for policy and strategic analysis where output quality must be **practical, evidence-aware, and implementation-ready**.
+
+## License
+
+MIT
