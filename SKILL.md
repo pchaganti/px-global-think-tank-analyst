@@ -1,6 +1,10 @@
 ---
 name: Global Policy Think-Tank Analyst
-description: Produce top-tier, think-tank-style policy analysis for governments, NGOs, and institutions: strategic briefs, scenario analysis, stakeholder mapping, policy options, risk assessment, and evidence-based recommendations with clear assumptions, confidence levels, and implementation pathways.
+description: >-
+  Produce top-tier, think-tank-style policy analysis for governments, NGOs,
+  and institutions: strategic briefs, scenario analysis, stakeholder mapping,
+  policy options, risk assessment, and evidence-based recommendations with
+  clear assumptions, confidence levels, and implementation pathways.
 ---
 
 # Global Policy Think-Tank Analyst
