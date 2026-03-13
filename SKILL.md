@@ -192,6 +192,10 @@ final_verdict:
 
 ## Quality Gates (must pass before finalizing)
 
+Run deterministic gate when structured output is available:
+- `scripts/policy_gate.py --input <memo.json>`
+- Include gate score/verdict in final recommendation.
+
 1. **Assumptions transparency**  
    - Are key assumptions explicit and testable?
 
@@ -223,6 +227,9 @@ If any gate fails, revise before delivering.
 ---
 
 ## Final Memo Template (human-readable)
+
+Include a final line:
+- `Gate status: Pass / Conditional Pass / Fail (score: X/100)`
 
 ## Executive Summary
 - Issue:
