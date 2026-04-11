@@ -1,6 +1,6 @@
 ---
 name: global-think-tank-analyst
-description: Produce decision-ready geopolitical and policy analysis in a think-tank format. Use for country risk, security trend assessment, scenario planning, red-team challenge, and strategy options; outputs include explicit assumptions, confidence labels, alternative hypotheses, indicators to watch, and JSON-ready structure.
+description: Generate decision-ready geopolitical risk memos in minutes. Use for country risk, sanctions/trade exposure, security trend assessment, scenario planning, and red-team challenge; outputs include evidence notes, confidence scoring, Go/No-Go triggers, alternative hypotheses, and 2-week validation plans.
 homepage: https://github.com/vassiliylakhonin/global-think-tank-analyst
 user-invocable: true
 metadata: {"openclaw":{"emoji":"🌍","os":["linux","darwin","win32"]}}

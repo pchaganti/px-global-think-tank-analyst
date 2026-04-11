@@ -1,13 +1,15 @@
-# Global Think Tank Analyst
+# Geopolitical Risk Copilot (Global Think Tank Analyst)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Forks](https://img.shields.io/github/forks/vassiliylakhonin/global-think-tank-analyst?style=flat)](https://github.com/vassiliylakhonin/global-think-tank-analyst/forks)
 [![Stars](https://img.shields.io/github/stars/vassiliylakhonin/global-think-tank-analyst?style=flat)](https://github.com/vassiliylakhonin/global-think-tank-analyst/stargazers)
 [![Last commit](https://img.shields.io/github/last-commit/vassiliylakhonin/global-think-tank-analyst)](https://github.com/vassiliylakhonin/global-think-tank-analyst/commits/main)
 
-Decision-grade geopolitical and policy analysis skill for OpenClaw/ClawHub.
+Decision-grade geopolitical risk and policy analysis skill for OpenClaw/ClawHub.
 
-**What you get:** concise thesis, assumptions, confidence, alternative hypotheses, risks, scenarios, and action-ready recommendations.
+**In 5-10 minutes you get:** board-ready memo, evidence note, confidence score, Go/No-Go triggers, and a 2-week validation plan.
+
+**Best for:** corporate risk teams, policy units, investors, and strategic intelligence workflows.
 
 ---
 
@@ -48,6 +50,14 @@ think-tank --red-team "EU strategic autonomy is realistic by 2030"
 - `think-tank --horizon [topic] [timeframe]` - weak signals + wildcards
 - `think-tank --red-team [claim]` - challenge assumptions and failure modes
 - `think-tank --json [topic]` - machine-readable output
+
+---
+
+## High-conversion use cases
+
+- Country risk decision memo for market entry
+- Sanctions exposure stress-test for executive team
+- Regional security scenario pack with trigger thresholds
 
 ---
 

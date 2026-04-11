@@ -5,6 +5,8 @@ All notable changes to this project are documented in this file.
 ## [Unreleased]
 
 ### Changed
+- Repositioned skill for higher ClawHub conversion: clearer value proposition, ICP-first README, and high-conversion use-case block.
+- Updated `SKILL.md` description to emphasize evidence notes, confidence scoring, Go/No-Go triggers, and validation plans.
 - Synced `SKILL.md` with richer ClawHub methodology (framework selection, workflow, output formats, structured template) and cleaned markdown formatting for GitHub readability.
 - Added vNext references for subagent orchestration, confidence scoring rubric, and eval release gate.
 
