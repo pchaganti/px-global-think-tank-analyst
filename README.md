@@ -104,6 +104,7 @@ Advanced references:
 - `references/eval-pack.md`
 - `references/enterprise-v1-blueprint.md`
 - `references/evidence-layer-spec.md`
+- `references/source-policy-and-provenance.md`
 - `references/governance-and-audit.md`
 
 Enterprise template:

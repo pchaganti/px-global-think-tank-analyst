@@ -58,6 +58,14 @@ think-tank --json [topic]
 11. Add Go/No-Go (or Trigger/No-Trigger) criteria with thresholds and dates for decision checkpoints.
 12. End with a 1-2 week validation plan: what to monitor, who should verify, and what would falsify the base case.
 
+## Evidence Safety Guardrails (mandatory)
+
+- Never fabricate sources, URLs, dates, or quotes.
+- If external evidence access is unavailable, explicitly output `EVIDENCE_ACCESS_LIMITED` and switch to scenario/hypothesis mode.
+- Label key claims as `verified`, `inferred`, or `unknown`.
+- Separate facts from inference in the final memo.
+- Downgrade confidence when verification is incomplete.
+
 ## Confidence Labels
 
 - **High**: well-supported and relatively stable
@@ -95,6 +103,7 @@ Use these references when quality bar is high or stakes are material:
 - **Regression/eval gate**: `references/eval-pack.md`
 - **Enterprise architecture**: `references/enterprise-v1-blueprint.md`
 - **Evidence layer spec**: `references/evidence-layer-spec.md`
+- **Source policy and provenance**: `references/source-policy-and-provenance.md`
 - **Governance and audit**: `references/governance-and-audit.md`
 
 ## Output Formats
