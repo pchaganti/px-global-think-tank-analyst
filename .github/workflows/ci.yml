@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  validate-skill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate SKILL frontmatter
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re, sys
+          p = Path('SKILL.md')
+          if not p.exists():
+              print('SKILL.md missing')
+              sys.exit(1)
+          t = p.read_text(encoding='utf-8')
+          if not t.startswith('---\n'):
+              print('Frontmatter missing')
+              sys.exit(1)
+          end = t.find('\n---\n', 4)
+          if end == -1:
+              print('Frontmatter closing delimiter missing')
+              sys.exit(1)
+          fm = t[4:end]
+          if not re.search(r'^name:\s*\S+', fm, re.M):
+              print('name missing in frontmatter')
+              sys.exit(1)
+          if not re.search(r'^description:\s*.+', fm, re.M):
+              print('description missing in frontmatter')
+              sys.exit(1)
+          print('Frontmatter OK')
+          PY
