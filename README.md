@@ -4,79 +4,74 @@
 [![CI](https://github.com/vassiliylakhonin/global-think-tank-analyst/actions/workflows/ci.yml/badge.svg)](https://github.com/vassiliylakhonin/global-think-tank-analyst/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## Кратко о навыке
+## Overview
 
-> **Decision‑ready geopolitical и policy memo** для OpenClaw и Codex. 
-> Превращает вопросы о региональной политике, санкциях, торговле и регулировании в структурированные, факт‑подтверждённые мему‑выводы, где явно отделены факты, оценки, предположения и «unknown» — это ключ к принятию обоснованных решений.
+Decision‑ready geopolitical and policy memo skill for OpenClaw and Codex. Converts geopolitical, policy, sanctions, trade, and regulatory questions into structured, fact‑verified memos with explicit uncertainty and evidence limits.
 
-## Что делает этот skill
+## What the skill does
 
-- Быстрый короткий бриф (режим A)  
-- Стандартный мемо (режим B)  
-- Сценарное краткое изложение (режим C)  
-- Red‑team‑анализ (режим D)  
+- Quick brief (Mode A)
+- Standard memo (Mode B)
+- Scenario brief (Mode C)
+- Red‑team challenge (Mode D)
 
-Выбирайте режим в зависимости от времени и уровня детализации, которую требует клиент.
+Choose a mode based on client needs and the required level of detail.
 
-## Установка
+## Installation
 
 ```bash
 openclaw skills install vassiliylakhonin/global-think-tank-analyst
 ```
 
-## Codex‑вариант
+## Codex variant
 
-Для Codex просто подключите файл `skills/codex/SKILL.md` в объявление ассистента.
+Include `skills/codex/SKILL.md` in your assistant definition to use the skill with Codex.
 
-## Примеры запросов
+## Example Prompts
 
-### Режим A – *Quick Brief*
+### Mode A – Quick Brief
 
 ```
 Prepare a quick brief on the EU CBAM exposure for a Kazakh metals exporter over the next 12 months.
 ```
 
-### Режим B – *Standard Memo*
+### Mode B – Standard Memo
 
 ```
 Write a policy‑risk memo on sanctions exposure for a Russian energy company operating in Central Asia.
 ```
 
-### Режим C – *Scenario Brief*
+### Mode C – Scenario Brief
 
 ```
-Provide a scenario brief on possible US‑China semiconductor control developments for 2026‑2028.
+Provide a scenario brief on possible U.S‑China semiconductor control developments for 2026‑2028.
 ```
 
-### Режим D – *Red‑Team Challenge*
+### Mode D – Red‑Team Challenge
 
 ```
 Red‑team the claim that supply‑chain sanctions risk for a European tech firm is manageable.
 ```
 
-## Качество вывода
+## Output Quality
 
-| Критерий | Что обеспечивается |
-|----------|-----------------------|
-| **Решения‑ориентировано** | Структура: *Вопрос → Решение → Аудитория → Горизонт времени → Режим доказательств* |
-| **Чёткая неопределённость** | Степени `Certain`, `Plausible`, `Judgment`, `Unknown` |
-| **Разделение фактов/оценок** | Метки `Fact`, `Assessment`, `Assumption`, `Scenario`, `Unknown` |
-| **Дисциплина доказательств** | Ограничение «source‑backed», «reasoning‑only», «mixed» |
-| **Потенциальная недоступность данных** | Вывод `EVIDENCE ACCESS LIMITED` при отсутствии живой проверки |
+| Criterion | What is provided |
+|-----------|------------------|
+| **Decision‑oriented** | Structured outline: *Question → Decision → Audience → Horizon → Evidence Mode* |
+| **Explicit uncertainty** | Levels: `Certain`, `Plausible`, `Judgment`, `Unknown` |
+| **Fact/Assessment separation** | Tags `Fact`, `Assessment`, `Assumption`, `Scenario`, `Unknown` |
+| **Evidence discipline** | Mode: `source‑backed`, `reasoning‑only`, `mixed` |
+| **Limited evidence handling** | Output `EVIDENCE ACCESS LIMITED` when no live verification is possible |
 
-## Структура репозитория
+## Repository structure
 
 ```
-/SKILL.md            – основной мейн‑файл
-/codex/SKILL.md      – меняется для Codex‑исполнения
-/README.md           – этот файл
+/SKILL.md
+/codex/SKILL.md
+/README.md
 /LICENSE
 ```
 
-## Лицензия
+## License
 
-MIT – просто. Смотрите файл `LICENSE`.
-
----
-
-**Если вам потребуется более детальная настройка «ролей» (A‑D) или примеры для конкретных контекстов, спросите.**
+MIT – see the `LICENSE` file.
