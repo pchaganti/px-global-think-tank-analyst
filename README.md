@@ -4,18 +4,59 @@
 [![CI](https://github.com/vassiliylakhonin/global-think-tank-analyst/actions/workflows/ci.yml/badge.svg)](https://github.com/vassiliylakhonin/global-think-tank-analyst/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## Overview
+**Decision-ready geopolitical, policy, sanctions, trade, regulatory, and strategic-risk memos for OpenClaw and Codex.**
 
-Decision‑ready geopolitical and policy memo skill for OpenClaw and Codex. Converts geopolitical, policy, sanctions, trade, and regulatory questions into structured, fact‑verified memos with explicit uncertainty and evidence limits.
+Policy Risk Memo Architect turns broad risk questions into structured analysis with explicit evidence limits, uncertainty labels, competing interpretations, practical options, and indicators to watch. It is designed for users who need a usable decision memo, not a decorative geopolitical essay.
 
-## What the skill does
+## Why this skill exists
 
-- Quick brief (Mode A)
-- Standard memo (Mode B)
-- Scenario brief (Mode C)
-- Red‑team challenge (Mode D)
+Most AI policy analysis fails in predictable ways: it overstates certainty, buries the decision, mixes facts with speculation, and produces polished background instead of usable judgment.
 
-Choose a mode based on client needs and the required level of detail.
+This skill enforces a stricter memo discipline:
+
+- define the decision problem before analyzing it;
+- separate **facts**, **assumptions**, **assessments**, **scenarios**, and **unknowns**;
+- expose evidence limits instead of hiding them;
+- present competing interpretations when ambiguity matters;
+- end with options, trade-offs, indicators, and bounded confidence.
+
+## Best for
+
+- country risk briefs;
+- sanctions and export-control exposure assessments;
+- trade, tariff, and regulatory impact memos;
+- geopolitical scenario briefs;
+- stakeholder and incentives analysis;
+- red-team challenges to an existing policy or risk view;
+- leadership-facing strategic implications notes.
+
+## Not for
+
+- legal advice;
+- intelligence-style certainty;
+- generic news summaries;
+- academic literature reviews;
+- unsupported numerical forecasting;
+- prestige-sounding analysis with weak evidence.
+
+## Output modes
+
+| Mode | Use when you need | Typical output |
+|---|---|---|
+| **A — Quick Brief** | Fast orientation | Bottom line, why it matters, main risks, watchlist, confidence |
+| **B — Standard Memo** | Default decision memo | Executive takeaway, context, evidence limits, actors, assessment, options |
+| **C — Scenario Brief** | Divergent futures matter | Baseline, 2–4 scenarios, triggers, implications, indicators |
+| **D — Red-Team Challenge** | Stress-test a claim | Failure modes, alternative explanations, missing assumptions, revised judgment |
+
+## What the memo always makes explicit
+
+| Standard | How it appears |
+|---|---|
+| Decision framing | `Question`, `Decision`, `Audience`, `Time horizon`, `Evidence mode` |
+| Evidence discipline | `Fact`, `Assessment`, `Assumption`, `Scenario`, `Unknown` labels |
+| Evidence limits | Required notice when live/source verification was not performed |
+| Uncertainty | `Low`, `Moderate`, or `High` confidence tied to evidence quality |
+| Practical relevance | Options, trade-offs, implementation friction, and indicators to watch |
 
 ## Installation
 
@@ -23,55 +64,80 @@ Choose a mode based on client needs and the required level of detail.
 openclaw skills install vassiliylakhonin/global-think-tank-analyst
 ```
 
-## Codex variant
+Then ask OpenClaw for a policy-risk memo, scenario brief, or red-team challenge. The skill will activate when the request matches its domain.
 
-Include `skills/codex/SKILL.md` in your assistant definition to use the skill with Codex.
+## Codex usage
 
-## Example Prompts
+A Codex-ready variant is included at:
 
-### Mode A – Quick Brief
-
-```
-Prepare a quick brief on the EU CBAM exposure for a Kazakh metals exporter over the next 12 months.
+```text
+codex/SKILL.md
 ```
 
-### Mode B – Standard Memo
+Use that file in Codex skill workflows when you want the same analytical standard outside OpenClaw.
 
-```
-Write a policy‑risk memo on sanctions exposure for a Russian energy company operating in Central Asia.
-```
+## Example prompts
 
-### Mode C – Scenario Brief
+### Mode A — Quick Brief
 
-```
-Provide a scenario brief on possible U.S‑China semiconductor control developments for 2026‑2028.
+```text
+Prepare a quick brief on EU CBAM exposure for a Kazakh metals exporter over the next 12 months.
 ```
 
-### Mode D – Red‑Team Challenge
+### Mode B — Standard Memo
 
+```text
+Write a policy-risk memo on sanctions exposure for a Russian energy company operating in Central Asia.
 ```
-Red‑team the claim that supply‑chain sanctions risk for a European tech firm is manageable.
+
+### Mode C — Scenario Brief
+
+```text
+Provide a scenario brief on possible US-China semiconductor control developments for 2026-2028.
 ```
 
-## Output Quality
+### Mode D — Red-Team Challenge
 
-| Criterion | What is provided |
-|-----------|------------------|
-| **Decision‑oriented** | Structured outline: *Question → Decision → Audience → Horizon → Evidence Mode* |
-| **Explicit uncertainty** | Levels: `Certain`, `Plausible`, `Judgment`, `Unknown` |
-| **Fact/Assessment separation** | Tags `Fact`, `Assessment`, `Assumption`, `Scenario`, `Unknown` |
-| **Evidence discipline** | Mode: `source‑backed`, `reasoning‑only`, `mixed` |
-| **Limited evidence handling** | Output `EVIDENCE ACCESS LIMITED` when no live verification is possible |
+```text
+Red-team the claim that supply-chain sanctions risk for a European technology firm is manageable.
+```
+
+## Recommended prompt shape
+
+For best results, include the decision context:
+
+```text
+Use Policy Risk Memo Architect.
+Question: ...
+Decision this informs: ...
+Audience: ...
+Geography: ...
+Time horizon: ...
+Evidence mode: source-backed / reasoning-only / mixed
+Depth: quick brief / standard memo / scenario brief / red-team
+```
+
+If you do not provide all fields, the skill will infer what it can and state assumptions.
 
 ## Repository structure
 
+```text
+.
+├── SKILL.md              # OpenClaw skill
+├── codex/SKILL.md        # Codex-ready variant
+├── README.md             # Public documentation
+├── LICENSE
+├── CONTRIBUTING.md
+├── SECURITY.md
+└── .github/              # CI, issue templates, PR template
 ```
-/SKILL.md
-/codex/SKILL.md
-/README.md
-/LICENSE
-```
+
+## Trust and safety posture
+
+This skill is intentionally conservative about evidence. It should not fabricate sources, imply live verification when none occurred, or present speculative geopolitical judgments as facts.
+
+It is a decision-support tool, not legal, compliance, investment, or intelligence advice.
 
 ## License
 
-MIT – see the `LICENSE` file.
+MIT — see [LICENSE](LICENSE).
