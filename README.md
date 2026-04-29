@@ -92,6 +92,22 @@ Agent-readable endpoints:
 - [`signals/index.json`](signals/index.json) — machine-readable signal index;
 - [`signals/feed.json`](signals/feed.json) — JSON Feed for automated ingestion.
 
+
+## Relationship to Agenda-Intelligence.md
+
+This repository is the full memo skill. It is designed for decision-ready geopolitical, sanctions, trade, regulatory, and strategic-risk analysis.
+
+For a lighter, portable markdown layer that any AI agent can use before summarizing public agenda, see [Agenda-Intelligence.md](https://github.com/vassiliylakhonin/Agenda-Intelligence-md).
+
+Use them together like this:
+
+```text
+Agenda-Intelligence.md = small universal protocol for agenda triage
+Global Think Tank Analyst = full memo skill for decision-ready policy risk analysis
+```
+
+Global Think Tank Analyst can use Agenda-Intelligence.md principles for agenda triage, signal classification, uncertainty labels, scenarios, and watch-next indicators.
+
 ## Installation
 
 ```bash
